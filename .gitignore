@@ -35,6 +35,7 @@ ExportedObj/
 *.tmp
 *.user
 *.userprefs
+
 *.pidb
 *.booproj
 *.svd
@@ -57,4 +58,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+.vscode/
 
