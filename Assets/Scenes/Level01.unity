@@ -675,6 +675,62 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011092122}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1028803297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028803299}
+  - component: {fileID: 1028803298}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1028803298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028803297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d940e9a4adbaf5841a1a05a3ed4fce34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - name: bloop
+    audio: {fileID: 8300000, guid: 1295178a4fbb0be4e8cc5032404b2fab, type: 3}
+  - name: coin-pickup
+    audio: {fileID: 8300000, guid: 6528c1445a0ef8c41bc7a5c04747ae48, type: 3}
+  - name: enemy-hit
+    audio: {fileID: 8300000, guid: 74bceee6e060fa749bdce5c5874ce723, type: 3}
+  - name: error
+    audio: {fileID: 8300000, guid: a7d16f1d8c1b3ac4b85f1faeb3718f9f, type: 3}
+  - name: fail
+    audio: {fileID: 8300000, guid: b455f7e925a1a96419bbbe43261ce5d3, type: 3}
+  - name: level-complete
+    audio: {fileID: 8300000, guid: 4376c5582a4b54a44b2700e7f30fc9fa, type: 3}
+--- !u!4 &1028803299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028803297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.6083717, y: -2.1953812, z: 3.849533}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447375994
 GameObject:
   m_ObjectHideFlags: 0
