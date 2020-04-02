@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 8485216812907745250}
   - component: {fileID: 114379220853988408}
   - component: {fileID: 114138844889630664}
+  - component: {fileID: 2156548700263131226}
   m_Layer: 0
   m_Name: Creep
   m_TagString: Untagged
@@ -121,6 +122,8 @@ MonoBehaviour:
   ofenseStats:
     damage: 10
     attackSpeed: 1
+  enemyLayers:
+  - Infantry
 --- !u!114 &114379220853988408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +156,19 @@ MonoBehaviour:
   healthUIPrefab: {fileID: 5191619644333864405, guid: 911fce52c242cf745bd2468868f3ff0b,
     type: 3}
   healthPosition: {fileID: 460095896780799738}
+--- !u!135 &2156548700263131226
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485216812907745249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8485216813060978309
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +181,7 @@ GameObject:
   - component: {fileID: 8485216813060978305}
   - component: {fileID: 8485216813060978304}
   - component: {fileID: 8485216813060978311}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +272,6 @@ GameObject:
   - component: {fileID: 8485216813508443185}
   - component: {fileID: 8485216813508443212}
   - component: {fileID: 8485216813508443187}
-  - component: {fileID: 8485216813508443186}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -323,16 +338,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8485216813508443186
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8485216813508443184}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
