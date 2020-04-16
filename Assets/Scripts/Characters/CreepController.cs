@@ -21,7 +21,7 @@ public class CreepController : AttackGameObject
             finalTarget = obj.GetComponent<DamageableGameObject>();
         }
 
-        onAttackHit += PlayEffects;
+   
         
     }
 
@@ -47,10 +47,5 @@ public class CreepController : AttackGameObject
         {
             agent.SetDestination(finalTarget.transform.position);
         }
-    }
-
-    void PlayEffects(Vector3 position)
-    {
-        AudioManager.instance.Play("enemy-hit", position);
     }
 }

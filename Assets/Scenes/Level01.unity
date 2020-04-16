@@ -541,6 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2838173d9b6c34548a1ee89184c68e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angularSpeed: 6
   contactRadius: 0.7
   walkableLayer:
     serializedVersion: 2
@@ -717,6 +718,18 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: b455f7e925a1a96419bbbe43261ce5d3, type: 3}
   - name: level-complete
     audio: {fileID: 8300000, guid: 4376c5582a4b54a44b2700e7f30fc9fa, type: 3}
+  - name: splash-death1
+    audio: {fileID: 8300000, guid: 4e4edd970bc63024bae0ded5f0a4a663, type: 3}
+  - name: splash-death2
+    audio: {fileID: 8300000, guid: ce273b9efa2154f44ad490c8f33b53c4, type: 3}
+  - name: splash-hit1
+    audio: {fileID: 8300000, guid: 84277ef891f43a44bbcdab5632a46b6d, type: 3}
+  - name: splash-hit2
+    audio: {fileID: 8300000, guid: ead384bd5190f1d4faa1dc19b646adbe, type: 3}
+  - name: splash-strike1
+    audio: {fileID: 8300000, guid: 0b35c44172238504bb5f16f2c73937de, type: 3}
+  - name: splash-strike2
+    audio: {fileID: 8300000, guid: a1c8d2afa32e9164182e9d7752d9a998, type: 3}
 --- !u!4 &1028803299
 Transform:
   m_ObjectHideFlags: 0
@@ -945,11 +958,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3b0e0aa3b6160488b74ea2442c9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angularSpeed: 6
   contactRadius: 1.54
   currentHealth: 0
   defenseStats:
     maxHealth: 100
     armor: 1
+  damageTransform: {fileID: 0}
 --- !u!114 &1447375999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,10 +1423,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea73fdfaa3d5e743ae5cd65da980fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angularSpeed: 6
   contactRadius: 0.5
   ofenseStats:
     damage: 10
     attackSpeed: 1
+  attackRange: 4
   enemyLayers:
   - Creep
   enemiesToAttack: []
@@ -1645,11 +1662,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3b0e0aa3b6160488b74ea2442c9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angularSpeed: 6
   contactRadius: 0.5
   currentHealth: 0
   defenseStats:
     maxHealth: 100
     armor: 1
+  damageTransform: {fileID: 0}
 --- !u!114 &5100084795835202352
 MonoBehaviour:
   m_ObjectHideFlags: 0
