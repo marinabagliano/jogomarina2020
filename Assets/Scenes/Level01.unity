@@ -1483,8 +1483,8 @@ GameObject:
   - component: {fileID: 3644308239628186395}
   - component: {fileID: 5099482146895618240}
   - component: {fileID: 5100084795835202352}
-  - component: {fileID: 3644308239628186394}
   - component: {fileID: 3644308239628186397}
+  - component: {fileID: 3644308239628186394}
   m_Layer: 0
   m_Name: Infantry
   m_TagString: Untagged
@@ -1501,15 +1501,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 3644308239628186393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea73fdfaa3d5e743ae5cd65da980fbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 59524ac4632dfd84cb7658d07def2658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   angularSpeed: 6
   contactRadius: 0.5
   ofenseStats:
     damage: 10
-    attackSpeed: 1
+    attackSpeed: 1.2
   attackRange: 4
+  attackDelay: 0.5
+  castTransform: {fileID: 0}
   enemyLayers:
   - Creep
   enemiesToAttack: []
