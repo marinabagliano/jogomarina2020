@@ -12,6 +12,7 @@ public class PlayerController : TouchableGameObject
     Camera cam;
 
     public LayerMask walkableLayer;
+    public LayerMask collectibleLayer;
 
 
 
@@ -35,6 +36,14 @@ public class PlayerController : TouchableGameObject
             {
                 agent.SetDestination(hit.point);
             }
+
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, collectibleLayer))
+            {
+                Debug.Log("Collectible: " + hit.collider.name);
+                agent.SetDestination(hit.point);
+            }
+
+            
         }
         
     }
