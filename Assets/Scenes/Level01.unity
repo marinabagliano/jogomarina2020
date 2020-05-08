@@ -2514,6 +2514,10 @@ MonoBehaviour:
   - {fileID: 1763407647}
   - {fileID: 798770065}
   - {fileID: 566781564}
+  actionCost:
+  - {fileID: 835182722}
+  - {fileID: 2097288695}
+  - {fileID: 754094563}
 --- !u!1001 &1922546959
 PrefabInstance:
   m_ObjectHideFlags: 0
