@@ -2514,7 +2514,7 @@ MonoBehaviour:
   - {fileID: 1763407647}
   - {fileID: 798770065}
   - {fileID: 566781564}
-  actionCost:
+  actionCosts:
   - {fileID: 835182722}
   - {fileID: 2097288695}
   - {fileID: 754094563}
@@ -2813,8 +2813,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 353, y: -238}
-  m_SizeDelta: {x: -727.7, y: -498}
+  m_AnchoredPosition: {x: 345, y: -404}
+  m_SizeDelta: {x: -727.7, y: -846.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101490961
 MonoBehaviour:
