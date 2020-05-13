@@ -2491,6 +2491,7 @@ MonoBehaviour:
     prefab: {fileID: 395858077759503914, guid: 4a893568ce461a34eaf3eabd52ea3c4c, type: 3}
     waitTime: 10
     coolDown: 0
+  errorSound: error
   badSpawn:
   - {fileID: 1549944840}
   badPrefab: {fileID: 8485216812907745249, guid: 316f3ce96e30f9543aeb1987d333f1e5,
@@ -2813,8 +2814,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 345, y: -404}
-  m_SizeDelta: {x: -727.7, y: -846.2}
+  m_AnchoredPosition: {x: 377, y: -228}
+  m_SizeDelta: {x: -777.1, y: -750.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101490961
 MonoBehaviour:
