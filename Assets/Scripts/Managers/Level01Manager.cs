@@ -22,10 +22,18 @@ public class Level01Manager : LevelManager
 
     }
 
-
     protected override IEnumerator SpawnBad()
     {
-        yield return new WaitForSeconds(waitTimeFirstWave);
+        float wait = waitTimeFirstWave;
+        while(wait > 0)
+        {
+            if(onWaveCountdown != null)
+            {
+                onWaveCountdown(wait);
+            }
+            wait -= Time.deltaTime;
+            yield return null;
+        }
 
         for (int i = 0; i < badWaves; i++)
         {
