@@ -18,6 +18,7 @@ namespace NavGame.Managers
         public OnActionCooldownUpdateEvent onActionCooldownUpdate;
         public OnResourceUpdateEvent onResourceUpdate;
         public OnReportableErrorEvent onReportableError;
+        public OnWaveUpdateEvent onWaveUpdate;
 
 
 
@@ -34,7 +35,7 @@ namespace NavGame.Managers
                 Destroy(gameObject);
             }
         }
-        void Start()
+        protected virtual void Start()
         {
             StartCoroutine(SpawnBad());
         }
