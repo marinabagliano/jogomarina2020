@@ -1511,6 +1511,7 @@ GameObject:
   - component: {fileID: 887265359}
   - component: {fileID: 887265358}
   - component: {fileID: 887265357}
+  - component: {fileID: 887265360}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1592,6 +1593,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &887265360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887265355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759a08dc292597341aa03a3125e49aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothness: 0.1
 --- !u!4 &905573181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1954447250357053385, guid: d8fd1f7b7633c6b48ac54ee1fa4e888a,
@@ -1930,6 +1944,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 887265356}
     m_Modifications:
+    - target: {fileID: 8200772651748305802, guid: e8c1c5cd842bdb745b188814fabe7586,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ef1335c2085475a478bbf71ea0826357, type: 2}
     - target: {fileID: 8200772651755723262, guid: e8c1c5cd842bdb745b188814fabe7586,
         type: 3}
       propertyPath: m_Name
