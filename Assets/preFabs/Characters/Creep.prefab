@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 114138844889630664}
   - component: {fileID: 2156548700263131226}
   - component: {fileID: 7291771198693723859}
+  - component: {fileID: 5445546493739092355}
   m_Layer: 0
   m_Name: Creep
   m_TagString: Untagged
@@ -225,6 +226,19 @@ MonoBehaviour:
   damageEffects: {fileID: 4455052413380126491, guid: 6da8b86ddf550e84b87d2a241bfb6f47,
     type: 3}
   dieEffect: {fileID: 0}
+--- !u!114 &5445546493739092355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485216812907745249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759a08dc292597341aa03a3125e49aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothness: 0.1
 --- !u!1001 &157302069891157401
 PrefabInstance:
   m_ObjectHideFlags: 0
