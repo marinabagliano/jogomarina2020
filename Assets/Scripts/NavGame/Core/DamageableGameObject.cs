@@ -14,16 +14,16 @@ namespace NavGame.Core
         public OnHealthChangedEvent onHealthChanged;
         public OnDiedEvent onDied;
 
+        bool isDead = false;
+
         protected virtual void Awake()
         {
             currentHealth = defenseStats.maxHealth;
-            if(damageTransform == null)
+            if (damageTransform == null)
             {
                 damageTransform = transform;
             }
         }
-
-
 
         public void TakeDamage(int amount)
         {
@@ -32,17 +32,17 @@ namespace NavGame.Core
 
             currentHealth = currentHealth - amount;
 
-            if(onDamageTaken != null)
+            if (onDamageTaken != null)
             {
                 onDamageTaken(damageTransform.position, amount);
             }
-            
+
             if (onHealthChanged != null)
             {
                 onHealthChanged(defenseStats.maxHealth, currentHealth);
             }
 
-            if(currentHealth <= 0)
+            if (currentHealth <= 0)
             {
                 Die();
             }
@@ -50,10 +50,14 @@ namespace NavGame.Core
 
         public virtual void Die()
         {
-            Destroy(gameObject);
-            if(onDied != null)
+            if (!isDead)
             {
-                onDied();
+                isDead = true;
+                Destroy(gameObject);
+                if (onDied != null)
+                {
+                    onDied();
+                }
             }
         }
     }
